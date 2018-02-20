@@ -1,0 +1,164 @@
+/* GENERAL STYLES ---------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+    
+body {
+    background-color: #bebcad;
+}
+
+h3 {
+    padding-left: 15px;
+    line-height: 30px;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0,0,0,0),
+        rgba(0,0,0,0) 2px,
+        rgba(0,0,0,.1) 2px,
+        rgba(0,0,0,.1) 4px
+    ) 
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border-bottom: 1px dotted black;
+    margin: 10px 0 0 8px;
+}
+
+h4 {
+    margin-left: 30px;
+    color: #574d33;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.left-article p {
+    margin: 5px 40px 15px 30px;
+    text-align: justify;
+    color: #786a47;
+}
+
+/* GRID ---------------- */
+
+.main-container {
+    width: 60%;
+    margin: 0 auto; /* centers it */
+    position: relative; /* to prep for positioning of the absolute positioning of "Uncivilized Zen Garden */
+}
+
+.column-container {
+    display: table; /* instead of floats for cols */
+}
+
+.left-column {
+    width: 70%;
+    background-color: #e9e9e7;
+   
+}
+
+.right-column {
+    width: 30%;
+    background-color: #998a67;
+}
+
+.column {
+    display: table-cell; /* along w display: table above */
+}
+
+footer {
+    background-color: #7ecdff;
+    line-height: 34px;
+    text-align: center;
+}
+
+/* IMAGES ---------------- */
+
+img {
+    width: 100%;
+    display: inherit; /* nobody here knows why this fixes the break between the images in the header */
+}
+
+/* RIGHT COLUMN ---------------- */
+
+.right-column li a {
+    font-weight: bold;
+    color: #e5d9bc;
+    list-style-position: inside;
+    display: list-item;
+    list-style-type: disc;
+}
+
+.right-column li a:hover {
+    color: #7ecdff;
+}
+
+.right-column li a.designer-name {
+    font-weight: normal;
+    color: #595339;
+    display: inline; /* gets rid of bullet and puts inline w/ "by" */
+}
+
+.right-column li a.designer-name:hover {
+    color: #7ecdff;
+}
+
+/* CUSTOM (ONE-OFFS) ---------------- */
+
+.whole-div-shadow {
+    box-shadow: 0 0 10px #999;
+}
+
+.float-left {
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.float-right {
+    float: right;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#summary p {
+    text-align: right;
+    margin-top: 30px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+#authors p { /* overriding 'justify' of its left-article class */
+    text-align: center; 
+    margin-top: 50px;
+    padding-bottom: 150px; /* was "margin-bottom" but grass didn't show up */
+    margin-bottom: 0; /* overrides that there is the .left-article class around */
+}
+
+#authors {
+    background-size: cover; /* play w this */
+    background-repeat: no-repeat; /* play w this */
+    background-image: url("https://raw.githubusercontent.com/nss-evening-cohort-7/css-lecture/master/grass.jpg");
+}
+
+.title {
+    font-size: 25px;
+    color: #D8D6C7;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    position: absolute;
+    left: -202px;
+    top: 260px;
+}
+
+.footer-claw {
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+}
